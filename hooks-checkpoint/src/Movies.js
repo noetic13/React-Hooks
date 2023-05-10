@@ -1,6 +1,7 @@
 import './App.css';
 import {useState} from 'react';
 import Add from './Add' ;
+import {Link} from 'react-router-dom';
 const MovieList = ({movies,addMovie}) => {
   const [searchTerm, setSearchTerm]=useState('');
   
@@ -47,6 +48,7 @@ const MovieList = ({movies,addMovie}) => {
             <p className="movie__detail"><span className="icons icons-yellow"><i className="fas fa-file-invoice-dollar" />
               </span>Rating : {movies.rating}</p>
           </div>
+          <Link to= {`/movies/${movies.id}`} > Details</Link>
         </div>
         <div className="movie__price">$12.56</div>
       </figure>)}

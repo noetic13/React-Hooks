@@ -25,6 +25,11 @@
 .search-container button[type=submit]:hover {
   background-color: #3e8e41;
 }
+.container{
+    background-size: cover;
+    height:960px;
+    text-align: center
+}
 
 
 
@@ -43,6 +48,9 @@ body {
     font-weight: 300;
     color: #444;
     background:linear-gradient(to right bottom, #A9C9FF 0%, #FFBBEC 100%); 
+    background-repeat : no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
